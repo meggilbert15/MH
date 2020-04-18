@@ -1,0 +1,102 @@
+body {
+    width: 100%;
+    /* display: flex; */
+    /* background: grey; */
+    overflow: hidden;
+}
+
+
+#navBar {
+  
+  width: 110%;
+  margin-top: 0;
+  margin-left: -7em;
+ 
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-content: left;
+  justify-content: center;
+  /* width: 70%; */
+  height: 7em;
+}
+
+.bar {
+  max-height: fit-content;
+  display: flex;
+  background: rgba(0, 0, 0, 0.123);
+  width: 60%;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-right: 10px;
+}
+
+.navButton {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    text-decoration: none;
+    color:  #910d10;
+    /* flex-grow: 1; */
+}  
+ 
+  nav h1 {
+    flex-grow: 2;
+    position: relative;
+    margin-left: 6em;
+    margin-top: -.2em;
+  }
+
+  .navButton:hover {
+    transform: scale(1.07);
+    color:  #3e2d20;
+    transition: .2s ease-in-out;
+    text-decoration: 1.2px #3e2d20 underline;
+    text-decoration-style: double;
+  }
+
+  nav a:active {
+    color: #74553b;
+    text-decoration-color: #74553b;
+    transition: none;
+}
+
+
+
+.hero-image {
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("http://www.ashland-ne.com/pages/image_rotator/BXDVoCo.jpg");
+  height: 35em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin-top: 3em;
+  margin-left: -.5em;
+}
+
+.hero-text {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -2em;
+  transform: translate(-50%, -50%);
+  color: silver;
+  letter-spacing: 2px;
+}
+
+.welcome {
+  font-size: 2em;
+  line-height: 2em;
+}
+
+.MH {
+  font-size: 2em;
+  /* margin-top: -.5em; */
+  letter-spacing: 5px;
+  opacity: .5;
+}
