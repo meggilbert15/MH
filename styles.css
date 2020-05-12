@@ -36,6 +36,7 @@ nav {
 .navButton {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2em;
+    font-weight: 400;
     text-decoration: none;
     color:  #910d10;
     flex-grow: 1;
@@ -131,12 +132,13 @@ nav {
 /* ABOUT */
 
 #about {
-  padding-top: 3em;
   display: grid;
+  padding-top: 3em;
+  padding-bottom: 6em;
   height: fit-content;
   margin-bottom: 2.5em;
   align-content: center;
-  color: #64090b;
+  color: #3e2d20;
 }
 
 .aboutT {
@@ -176,4 +178,127 @@ nav {
   width: 96%;
   grid-column: 1/2;
   grid-row: 2/3;
+}
+
+
+
+
+
+
+/* PORTFOLIO */
+#portfolio {
+  display: grid;
+  padding-top: 3em;
+  height: fit-content;
+  border-top: 9em solid #3e2d20;
+  padding-bottom: 9em;
+
+}
+
+.portTitle {
+  font-size: 4em;
+  /* margin-top: -.4em; */
+  justify-self: center;
+  font-family:  'Open Sans', sans-serif;
+  letter-spacing: 3px;
+  color: #64090b;
+  margin-bottom: .2em;
+}
+
+.portIntro{
+  text-align: center;
+  font-size: 1.3em;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: .7px;
+  font-weight: 400;
+  margin-right: 2em;
+  margin-left: 2em;
+}
+
+
+
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: black;
+  border-top: .5em solid #64090b;
+  border-bottom: .5em solid #64090b;
+}
+
+.carousel-cell {
+  width: 70%;
+  height: 200px;
+  /* flex-box, center image in cell */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+.carousel-cell img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  /* dim unselected */
+  opacity: 0.7;
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s, transform 0.3s, -webkit-filter 0.3s, filter 0.3s;
+          transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+}
+
+/* brighten selected image */
+.carousel-cell.is-selected img {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-filter: none;
+          filter: none;
+}
+
+@media screen and ( min-width: 768px ) {
+  .carousel-cell {
+    height: 400px;
+  }
+}
+
+@media screen and ( min-width: 960px ) {
+  .carousel-cell {
+    width: 60%;
+  }
+}
+
+/* buttons, no circle */
+.flickity-prev-next-button {
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  opacity: 0.6;
+}
+.flickity-prev-next-button:hover {
+  background: transparent;
+  opacity: 1;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: #64090b;
+}
+.flickity-prev-next-button.no-svg {
+  color: #64090b;
+}
+/* closer to edge */
+.flickity-prev-next-button.previous { left: 0; }
+.flickity-prev-next-button.next { right: 0; }
+/* hide disabled button */
+.flickity-prev-next-button:disabled {
+  display: none;
 }

@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
         
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://npmcdn.com/flickity@2/dist/flickity.css">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap" rel="stylesheet">
     </head>
@@ -28,7 +29,7 @@
                     <h1 class="navLogo"><a href="#"><img width="180" src="media/MH_Logo-01 - Picture no BG.png" alt=""></a></h1>
                     <a class="navButton" href="#home">Home</a>
                     <a class="navButton" href="#about">About</a>
-                    <a class="navButton" href="#portfolio">Portfolio</a>
+                    <a class="navButton" href="#Our Work">Portfolio</a>
                     <a class="navButton" href="#contact">Contact</a>
                 </div>
             </nav>
@@ -46,7 +47,7 @@
         <div id="about">
             <h2 class="aboutT"> About Us </h2>
             
-            <video autoplay loop class="aboutImage">
+            <video loop class="aboutImage" autoplay>
                 <source src="media/DJI_0050.MP4" type="video/mp4">
               </video>
             <section class="aboutContent">
@@ -58,6 +59,38 @@
 
 
         <div id="portfolio">
+            <h2 class="portTitle">Our Work</h2>
+            <p class="portIntro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ve  anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in Excepteur s</p>
+            <div class="carousel js-flickity">
+                <!-- images from unsplash.com -->
+                <div class="carousel-cell">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" alt="orange tree" />
+                </div>
+                <div class="carousel-cell">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" alt="submerged" />
+                </div>
+                <div class="carousel-cell">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" alt="look-out" />
+                </div>
+                <div class="carousel-cell">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" alt="One World Trade" />
+                </div>
+                <div class="carousel-cell">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" alt="drizzle" />
+                </div>
+                <div class="carousel-cell">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" alt="cat nose" />
+                </div>
+                <div class="carousel-cell">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" alt="contrail" />
+                </div>
+                <div class="carousel-cell">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" alt="golden hour" />
+                </div>
+                <div class="carousel-cell">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" alt="flight formation" />
+                </div>
+              </div>
         </div>
 
         
@@ -69,6 +102,7 @@
         <!-- JS Libraries -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+        <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
         <!-- My Scripts -->
         <script src="scripts.js"></script>
 
