@@ -207,20 +207,21 @@ nav {
 
 .portIntro{
   text-align: center;
-  font-size: 1.3em;
+  font-size: 1.4em;
   font-family: 'Open Sans', sans-serif;
-  letter-spacing: .7px;
+  word-spacing: 2px;
+  line-height: 1.7em;
   font-weight: 400;
   margin-right: 2em;
   margin-left: 2em;
+  color: rgb(75, 72, 72);
+  padding-bottom: 1em;
 }
 
 
 
 
 * { box-sizing: border-box; }
-
-body { font-family: sans-serif; }
 
 .carousel {
   background: black;
@@ -230,7 +231,7 @@ body { font-family: sans-serif; }
 
 .carousel-cell {
   width: 70%;
-  height: 200px;
+  height: 900px;
   /* flex-box, center image in cell */
   display: -webkit-box;
   display: -webkit-flex;
