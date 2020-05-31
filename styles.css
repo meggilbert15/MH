@@ -50,6 +50,36 @@ nav {
     margin-left: 2em;
     /* !!~!!!!!!!!!!!!!!!!!!!!!!^ in mobile media query, take out margin-left */
     /* margin-top: -.2em; */
+    /* margin-right: -2em; */
+  }
+
+  #call {
+    font-family: 'Open Sans', sans-serif;
+    font-size: .8em;
+    font-weight: 400;
+    text-decoration: none;
+    color:  #910d10;
+    flex-grow: 1;
+    margin-right: 10px;
+    justify-content: baseline;
+  }
+
+  #call a:link{
+    color: #000000;
+  }
+
+  #call a:hover {
+    color: #910d10;
+    font-weight: 800;
+  }
+
+  #call a:active {
+    color: #743f27;
+    font-weight: 800;
+  }
+
+  #call a:visited {
+    color: #910d10;
   }
 
   .navButton:hover {

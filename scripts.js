@@ -16,3 +16,4 @@ lightGallery(document.getElementById('lightgallery'), {
   
   
 });
+
