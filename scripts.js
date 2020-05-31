@@ -8,3 +8,11 @@ gsap.to('.MH', {
   });
 
   
+lightGallery(document.getElementById('lightgallery'), {
+  
+  mode: 'lg-zoom-out',
+  speed: 200,
+  download: false ,
+  
+  
+});
