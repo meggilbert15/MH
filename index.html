@@ -123,28 +123,24 @@
         </div>
 
         
-        <div class="container">  
-          <form id="contact" action="" method="post" data-netlify="true">
-            <h3>Contact Form</h3>
-            <h4>Contact us today, and get reply with in 24 hours!</h4>
-            <fieldset>
-              <input placeholder="Full Name" type="text" tabindex="1" required autofocus>
-            </fieldset>
-            <fieldset>
-              <input placeholder="Email Address" type="email" tabindex="2" required>
-            </fieldset>
-            <fieldset>
-              <input placeholder="Phone Number" type="tel" tabindex="3" required>
-            </fieldset>
-            
-              <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
-            </fieldset>
-            <fieldset>
-              <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Send now</button>
-            </fieldset>
+        <div class="container">
+          <form netlify id="contact" method="POST" data-netlify="true">
+            <h2>Contact Us!</h2>
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" name="name" />
+            </div>
+            <div class="form-group">
+              <label>Your Email</label>
+              <input type="email" name="email" />
+            </div>
+            <div class="form-group">
+              <label>Message: </label>
+              <textarea name="message"></textarea>
+            </div>
+            <button type="submit">Send</button>
           </form>
-         
-          
+
         </div>
 
 

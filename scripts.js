@@ -17,17 +17,7 @@ lightGallery(document.getElementById('lightgallery'), {
   
 });
 
-$("#contact").validate({
-  rules: {
-    website: {
-      required: false,
-      url: false
-    }
-  },
-  submitHandler: function(form) {
-    form.submit();
-  }
- });
+
 
  $("#contact").submit(function(e) {
   e.preventDefault();
