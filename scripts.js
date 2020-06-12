@@ -17,3 +17,23 @@ lightGallery(document.getElementById('lightgallery'), {
   
 });
 
+$("#contact").validate({
+  rules: {
+    website: {
+      required: false,
+      url: false
+    }
+  },
+  submitHandler: function(form) {
+    form.submit();
+  }
+ });
+
+ $("#contact").submit(function(e) {
+  e.preventDefault();
+
+  var $form = $(this);
+  $.post($form.attr("action"), $form.serialize()).then(function() {
+    alert("Thank you!");
+  });
+});
