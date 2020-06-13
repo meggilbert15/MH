@@ -448,11 +448,12 @@ fieldset {
 	height:100px;
 	max-width:100%;
   resize:none;
+  text-align: center;
 }
 
 #contact button[type="submit"] {
 	cursor:pointer;
-	width:100%;
+	width:105%;
 	border:none;
 	background:#000;
 	color:#FFF;
