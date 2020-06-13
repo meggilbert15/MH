@@ -204,6 +204,7 @@ nav {
 
 
 .aboutImage {
+  
   background:white;
   justify-self: center;
   filter: brightness(50%);
@@ -226,8 +227,8 @@ nav {
   padding-top: 3em;
   height: fit-content;
   border-top: 9em solid #3e2d20;
-  padding-bottom: 2em;
-  
+  padding-bottom: 6em;
+  border-bottom: .75em double #910d10;
 }
 
 .portTitle {
